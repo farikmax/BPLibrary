@@ -1,0 +1,78 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $DARK;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	&__logo {
+		display: flex;
+
+		&_title {
+			font-family: SECOND_FONT;
+			font-size: 30px;
+			line-height: 50px;
+			font-weight: 400;
+			letter-spacing: 0.6px;
+			color: $WHITE;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		flex: 1 1 auto;
+		justify-content: flex-end;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&_item {
+			display: flex;
+			position: relative;
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 2px;
+				width: 0%;
+				background-color: $GOLD;
+				transition: width 0.3s ease-in-out;
+			}
+			&:hover::after {
+				width: 100%;
+			}
+		}
+		&_link {
+			display: flex;
+			font-size: 20px;
+			line-height: 50px;
+			font-weight: 400;
+			color: $WHITE;
+			transition: color 0.2s ease-in-out;
+			&:hover {
+				color: $GRAY;
+			}
+		}
+	}
+	&__profile {
+		display: flex;
+		width: 28px;
+		height: 28px;
+		border-radius: 100%;
+		margin-left: 40px;
+		cursor: pointer;
+
+		&_icon {
+			fill: $WHITE;
+		}
+	}
+}
