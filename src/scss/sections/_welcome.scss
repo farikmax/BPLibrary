@@ -1,0 +1,30 @@
+.welcome {
+	display: flex;
+	position: relative;
+	min-height: 600px;
+	background-image: linear-gradient(180deg, $DARK 0%, rgb($DARK, 0.1) 100%), url('../images/pic/Welcome.jpg');
+	background-size: contain;
+	&__wrapper {
+		display: flex;
+		position: absolute;
+		left: 0;
+		top: 55%;
+		transform: translateY(-50%);
+		background-color: $BLACK;
+		&_title {
+			color: $WHITE;
+			display: flex;
+			font-family: $SECOND_FONT;
+			min-width: 600px;
+			font-weight: 400;
+			font-size: 40px;
+			line-height: 50px;
+			letter-spacing: 3px;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			text-transform: uppercase;
+			padding: 35px 40px;
+		}
+	}
+}
