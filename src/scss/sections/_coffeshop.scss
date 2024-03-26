@@ -1,0 +1,109 @@
+.coffeshop {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	&__title {
+		display: flex;
+		justify-content: center;
+		font-family: $SECOND_FONT;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+
+		&_line {
+			display: flex;
+			border-bottom: 1px solid $DARK;
+			max-width: 50px;
+			width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__descr {
+		display: flex;
+		justify-content: center;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 40px;
+		letter-spacing: 2px;
+		margin-bottom: 40px;
+	}
+
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	&__cardmenu {
+		display: flex;
+		flex-direction: column;
+
+		&_title {
+			font-family: $SECOND_FONT;
+			color: $GOLD;
+			font-size: 40px;
+			line-height: 40px;
+			font-weight: 400;
+			letter-spacing: 2px;
+			margin-bottom: 40px;
+		}
+
+		&_list {
+			&--item {
+				display: flex;
+				width: 100%;
+				align-items: center;
+				min-width: 482px;
+				font-size: 20px;
+				line-height: 40px;
+				letter-spacing: 2px;
+				font-weight: 400;
+				margin-bottom: 40px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&_title {
+					display: flex;
+					flex: 1;
+				}
+
+				&_line {
+					display: flex;
+					border-bottom: 1px solid $GOLD;
+					max-width: 100px;
+					width: 100%;
+					margin-left: 60px;
+				}
+
+				&_price {
+					font-family: $SECOND_FONT;
+					font-size: 20px;
+					font-weight: 400;
+					line-height: 40px;
+					letter-spacing: 2px;
+					margin-left: 60px;
+				}
+			}
+		}
+	}
+
+	&__coffeetea {
+		text-align: start;
+	}
+
+	&__desertscakes {
+		text-align: end;
+
+		&_list--item_title {
+			justify-content: flex-end;
+		}
+	}
+}
